@@ -27,10 +27,14 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+# My settings
+ATOMIC_REQUESTS = True
+
 
 # Application definition
 
 INSTALLED_APPS = [
+    'coconut.apps.CoconutConfig',
     'polls.apps.PollsConfig',
     'django.contrib.admin',
     'django.contrib.auth',
